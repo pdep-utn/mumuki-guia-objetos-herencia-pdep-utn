@@ -1,0 +1,22 @@
+test "Un bisonte sube de peso cuando come" {
+  var bisonte = new Bisonte(peso = 10)
+  bisonte.comer()
+	assert.equals(12, bisonte.peso())
+}
+
+test "Un bisonte volador sube de peso cuando come" {
+  var bisonte = new BisonteVolador(peso = 15)
+  bisonte.comer()
+	assert.equals(17, bisonte.peso())
+}
+
+test "Un bisonte volador pierde peso cuando vuela" {
+  var bisonte = new BisonteVolador(peso = 15)
+  bisonte.yipYip()
+	assert.equals(14, bisonte.peso())
+}
+
+test "Un bisonte normal no puede volar" {
+  var bisonte = new Bisonte(peso = 10)
+  assert.throwsException({bisonte.yipYip()})
+}

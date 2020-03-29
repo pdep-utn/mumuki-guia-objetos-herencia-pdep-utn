@@ -1,0 +1,19 @@
+---
+name: Herencia
+locale: es
+type: learning
+beta: false
+teacher_info: ''
+language: wollok
+id_format: "%05d"
+order:
+- 1
+- 2
+- 3
+- 4
+- 5
+- 7
+- 8
+- 9
+- 6
+private: false

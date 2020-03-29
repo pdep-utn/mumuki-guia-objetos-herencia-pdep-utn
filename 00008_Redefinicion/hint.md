@@ -1,0 +1,3 @@
+Tené en cuenta que cuando **redefinimos** un método heredado, explicitamos que esa era nuestra intención anteponiendo la palabra clave **override** en el metodo que estamos definiendo en la subclase.
+
+Esta palabra clave la usaremos siempre que querramos redefinir un método provisto por la superclase, como una forma de reforzar la idea de que efectivamente queremos cambiar el comportamiento heredado y no estamos redefiniendo accidentalmente por usar un mismo nombre que ya existía en su jerarquía.

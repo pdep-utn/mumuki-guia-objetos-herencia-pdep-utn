@@ -1,0 +1,12 @@
+test "el poder de un maestro fuego depende de su rabia y su locura"{
+  const maestro = new MaestroFuego(habilidad = 70, rabia = 200, locura = 0.1)
+	assert.equals(2000, maestro.poder())
+}
+test "un maestro fuego no es groso si su habilidad no es mayor a 5" {
+  const maestro = new MaestroFuego(habilidad = 3, rabia = 20, locura = 0.1)
+	assert.notThat(maestro.esGroso())
+}
+test "un maestro fuego es groso si su habilidad es mayor a 5" {
+  const maestro = new MaestroFuego(habilidad = 70, rabia = 200, locura = 0.1)
+	assert.that(maestro.esGroso())
+}

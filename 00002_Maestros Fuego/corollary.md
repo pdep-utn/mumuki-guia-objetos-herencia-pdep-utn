@@ -1,0 +1,3 @@
+Empezamos a notar que para clases distintas se esta repitiendo comportamiento, ya que la forma de  saber si **`esGroso`** es igual para cualquier maestro. Ante la posibilidad de agregar otro tipo de maestro más, deberíamos volver a repetir el mismo código, y si llegara a cambiar la forma en que se determina si un maestro es groso, habría que ser cuidadosos de cambiarlo en todos los lugares en los que lo hayamos repetido.
+
+A esta altura debería ser claro que nos está faltando algo... :hushed:

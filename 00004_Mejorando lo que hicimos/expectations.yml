@@ -1,0 +1,23 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MaestroAgua
+  inspection: Inherits:Maestro
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MaestroFuego
+  inspection: Inherits:Maestro
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Maestro
+  inspection: DeclaresMethod:esGroso
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MaestroAgua
+  inspection: Not:DeclaresMethod:esGroso
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MaestroFuego
+  inspection: Not:DeclaresMethod:esGroso
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MaestroAgua
+  inspection: DeclaresMethod:poder
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MaestroFuego
+  inspection: DeclaresMethod:poder

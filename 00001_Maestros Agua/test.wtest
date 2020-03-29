@@ -1,0 +1,13 @@
+test "el poder de un maestro agua depende de su habilidad"{
+  var maestro = new MaestroAgua(habilidad = 6)
+	assert.equals(600, maestro.poder())
+}
+test "un maestro agua es groso si su habilidad es mayor a 5" {
+  var maestro = new MaestroAgua(habilidad = 50)
+	assert.that(maestro.esGroso())
+}
+
+test "un maestro agua no es groso si su habilidad no es mayor a 5" {
+  var maestro = new MaestroAgua(habilidad = 4)
+	assert.notThat(maestro.esGroso())
+}

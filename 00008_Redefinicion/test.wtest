@@ -1,0 +1,14 @@
+test "un maestro sangre es peligroso siempre" {
+	var maestroSangre = new MaestroSangre(habilidad = 1)
+	assert.that(maestroSangre.esPeligroso())
+}
+
+test "un maestro es peligroso si su poder es alto" {
+	var maestroAgua = new MaestroAgua(habilidad = 50)
+	assert.that(maestroAgua.esPeligroso())
+}
+
+test "un maestro no es peligroso si su poder es bajo" {
+	var maestroAgua = new MaestroAgua(habilidad = 10)
+	assert.notThat(maestroAgua.esPeligroso())
+}

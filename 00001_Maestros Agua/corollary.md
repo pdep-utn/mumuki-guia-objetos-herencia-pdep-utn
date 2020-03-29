@@ -1,0 +1,1 @@
+Hasta ahora todo va bien, pudiste modelar a los maestros del agua, quienes se comportan de la misma manera, usando clases.

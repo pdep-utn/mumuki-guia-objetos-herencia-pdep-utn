@@ -1,0 +1,5 @@
+Cuando un objeto recibe un mensaje, mediante <a href="http://uqbar-wiki.org/index.php?title=Method_lookup" target="_blank">Method lookup</a> buscará el comportamiento requerido en la clase de la cual es instancia y, en caso de no tener un método para el mismo, en su superclase. Y si no está en su superclase, en la superclase de su superclase...
+
+Wollok maneja la idea de **herencia simple**, eso significa que una clase tiene siempre una **única** superclase. Si al declarar una clase no especificamos cuál es la superclase, la misma por defecto es `Object` que es una clase que define el comportamiento básico de todos los objetos.
+
+Si al seguir el method lookup para encontrar el método correspondiente al mensaje que recibió un objeto se llega hasta la clase `Object` y no está definido ahí, entonces va a fallar con el error que ya conocemos: el objeto no entiende el mensaje que le mandamos :astonished:

@@ -1,0 +1,1 @@
+Tené en cuenta que si declarás el atributo variable peso como una property, el getter viene gratis :wink:

@@ -1,0 +1,20 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: BisonteVolador
+  inspection: Inherits:Bisonte
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: BisonteVolador
+  inspection: Not:DeclaresMethod:comer
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Bisonte
+  inspection: DeclaresMethod:comer
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Bisonte
+  inspection: Not:DeclaresMethod:yipYip
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: BisonteVolador
+  inspection: DeclaresMethod:yipYip
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Bisonte
+  inspection: DeclaresAttribute:peso

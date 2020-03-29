@@ -1,0 +1,22 @@
+test "el poder de aang es 15000 cuando appa es su mascota" {
+	aang.mascota(appa)
+	assert.equals(15000, aang.poder())
+}
+
+test "el poder de aang es 1500 cuando momo es su mascota" {
+	aang.mascota(momo)
+	assert.equals(1500, aang.poder())
+}
+
+test "aang es groso en base a su poder y habilidad" {
+	aang.mascota(appa)
+	assert.that(aang.esGroso())
+}
+
+test "aang no es groso si tiene una mascota mediocre" {
+  const raton = object {
+    method poder() = 1
+  }
+  aang.mascota(raton)
+  assert.notThat(aang.esGroso())
+}
